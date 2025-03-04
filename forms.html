@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        div {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            background-color: lightgray;
+        }
+
+        form {
+            padding-left: 40%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+        <h1>Assignment Form</h1>
+        <form action="/submit" method="post">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">First Name:</label>
+            <input type="text" name="fname" placeholder="Abc"><br><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" placeholder="Xyz" required><br><br>
+
+            <label for="dob">Dob:</label>
+            <input type="date" name="dob" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="xyz@xyz.com" required><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="number" name="phone" placeholder="8888888888" required><br><br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender">
+            <label for="gender">Male</label>
+            <input type="radio" name="gender">
+            <label for="gender">Female</label><br><br>
+
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" cols="30" rows="3" placeholder="asfeeg egfiquef, dgfigf,hfqy"
+                required></textarea><br><br>
+
+            <label for="city">City:</label>
+            <input type="text" name="city" placeholder="dhf" required><br><br>
+
+            <label for="pincode">Pincode:</label>
+            <input type="number" name="pincode" placeholder="888888" required><br><br>
+
+            <label for="state">State:</label>
+            <input type="text" name="state" placeholder="dhf" required><br><br>
+
+            <label for="country">Country:</label>
+            <input type="text" name="country" placeholder="dhf" required><br><br>
+
+            <label for="hobbies">Hobbies:</label>
+            <input type="checkbox" name="hobbies">
+            <label for="hobbies">Reading</label>
+            <input type="checkbox" name="hobbies">
+            <label for="hobbies">Writing</label>
+            <input type="checkbox" name="hobbies">
+            <label for="hobbies">Singing</label><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            </fieldset>
+
+            
+        </form>
+
+    </div>
+
+</body>
+
+</html>

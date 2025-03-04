@@ -1,0 +1,21 @@
+th{
+    /* border: 1px solid black; */
+    border-bottom: 1px solid rgb(48, 161, 150);
+    border-top: 1px solid rgb(48, 161, 150);
+    padding: 10px;
+}
+td{
+    /* border: 1px solid black; */
+    border-bottom: 1px solid rgb(48, 161, 150);
+    padding: 10px;
+}
+table{
+    border-collapse: collapse;
+}
+#heading{
+    background-color: turquoise;
+    color: black;
+}
+#active{
+    color: rgb(234, 88, 66);
+}

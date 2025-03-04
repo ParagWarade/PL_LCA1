@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            padding: 2em;
+            background-color: #eef2f3;
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+        }
+
+        p::first-line {
+            font-weight: bold;
+            color: #0077b6;
+        }
+
+        button {
+            font-size: 1.2rem;
+            padding: 12px 24px;
+            background-color: #008cba;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #005f73;
+        }
+
+        input {
+            font-size: 1rem;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            transition: border 0.3s;
+        }
+
+        input:focus {
+            border: 2px solid #28a745;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+
+        ul li {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: #ddd;
+        }
+
+        ul li:nth-child(even) {
+            background-color: #bbb;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .box {
+            flex: 1;
+            height: 120px;
+            background-color: #ffcc00;
+            text-align: center;
+            line-height: 120px;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-color: lightblue;
+            }
+
+            .box {
+                height: 80px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                background-color: lightgreen;
+            }
+
+            button {
+                width: 100%;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .box {
+                height: 60px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eveniet asperiores ad necessitatibus, in culpa
+        quisquam earum soluta delectus recusandae rem vero iste ea laboriosam rerum atque mollitia animi commodi?</p>
+
+    <button>Hover Me</button>
+    <br><br>
+    <input type="text" placeholder="Focus on me">
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</body>
+
+</html>
